@@ -1,0 +1,289 @@
+/* Reset */
+
+* {
+    /* Using Alternative box model */
+    box-sizing: border-box;
+
+    /* Reset padding and margin for all the element  */
+    margin: 0 ;
+    padding: 0 ;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'poppins' , sans-serif;
+    line-height: 1.55;
+    color: rgb(60, 58, 71);
+}
+
+h1{
+    font-size: 3.15rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+h2{
+    font-size: 1.77rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: rgba(60, 58, 71 , .8);
+}
+
+h3{
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+    color: rgba(60, 58, 71 , .8);
+}
+
+h3.large{
+    font-size: 3.15rem;
+}
+
+.dark h3{
+    color: white;
+}
+
+h4{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+p{
+    margin-bottom: 1.3rem;
+}
+
+p.section-intro{
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.dark p.section-intro {
+    color: rgba(255,255,255, .8);
+}
+
+p.number{
+    font-size: 2.4rem;
+    font-weight: 200;
+    color: rgba(60, 58, 71 , .5);
+}
+
+p.large {
+    font-size: 1.75rem;
+    font-weight: 200;
+    letter-spacing: -1px;
+}
+
+a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #9F7657;
+}
+
+a:hover{
+    color: black;
+}
+
+form input , form textarea , form button {
+    font-family: 'poppins' , sans-serif;
+    font-size: 18px;
+    line-height: 1.55;
+
+}
+
+/* container */
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.container.small{
+    width: 60%;
+    max-width: 35rem;
+}
+
+
+/* Header  */
+
+#main-header,section{
+    padding: 13rem 0 ;
+    text-align: center;
+}
+
+#main-header h1 {
+    margin: 7rem 0 1 rem 0 ;
+}
+
+#main-header h2 {
+    margin-bottom: 7rem ;
+}
+
+.btn {
+    padding: 1.33rem 3.5rem;
+    border: 1px solid rgb(159,118,87) ;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: black;
+    color: azure;
+    border-radius: 10px;
+}
+
+
+
+/* Chair Section */
+#our-chairs{
+    background-color: #EFF0EA;
+}
+
+section header {
+    margin-bottom: 3.5rem;
+}
+
+h3+p{
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2.5rem ;
+    margin-bottom: 3.5rem;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.gallery div{
+    text-align: start;
+}
+
+.gallery img {
+    margin-bottom: 1.3rem;
+}
+
+/* Contact */
+
+#contact{
+    background-color: black;
+}
+
+ .dark label {
+   color :rgba(255,255,255, .8)
+}
+
+form div {
+    margin-bottom: 1.75rem;
+}
+
+form label {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: start;
+}
+
+form input , form textarea {
+  background-color:rgba(255,255,255, .1);
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  color: #EFF0EA;
+  resize: none;
+}
+
+form input:focus, form textarea:focus{
+    outline: none;
+    background-color:rgba(255,255,255, .2);
+}
+
+form button{
+    width: 100%;
+    cursor: pointer;
+}
+
+.dark .btn {
+    border :1px solid rgba(255,255,255, .8);
+    background-color: black;
+    color: white;
+}
+
+.dark .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+form button + p {
+    margin-top: 1.75rem;
+}
+
+/* Visit store  */
+
+.social-icons {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     gap:2.66rem;
+}
+
+p.large + .social-icons{
+    margin-top: 7rem;
+}
+
+/* Footer */
+
+footer {
+    padding: 5rem 0 ;
+    text-align: center ;
+    background-color: rgb(116, 114, 112);
+    margin: 2%;
+    border-radius: 30px 10px 30px 10px;
+}
+
+
+ /* popup message box style */
+
+.fixed  {
+    position: fixed;
+    padding: 20px 40px;
+    width: 240px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fixed textarea{
+    padding: 10px;
+    background-color: transparent;
+    color:rgb(116, 114, 112);
+    border-radius: 25px;
+    resize: none;
+    border: 2px solid rgb(97, 15, 15);
+}
+
+.fixed a button{
+    background-color: transparent;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+    color:rgb(116, 114, 112);
+}
+
+.fixed a button:hover{
+    background-color: black;
+    color: #EFF0EA;
+}
